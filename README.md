@@ -17,9 +17,9 @@ The three neural networks used in the newly presented multimodal classification 
 Four datasets are created for experimentation on different modality of data as follows,
 
 1. Textual modality - 
-.......1.text dataset + comments dataset to combine post's title and its comments to give more meaningful insights to data.
-.......2.text dataset alone with "clean-title" as main text feature.
+...(1.text dataset + comments dataset to combine post's title and its comments to give more meaningful insights to data.)
+...2.text dataset alone with "clean-title" as main text feature.
 2. Visual modality -  
-.......image data for posts that have images as attachement from metadata dataset.
+...(image data for posts that have images as attachement from metadata dataset.)
 3. Mutimodalality - 
-.......text + image data merged using text dataset and image dataset based on the "submission id" of each post if it has image.
+...(text + image data merged using text dataset and image dataset based on the "submission id" of each post if it has image.)
