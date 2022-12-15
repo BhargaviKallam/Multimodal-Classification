@@ -24,7 +24,7 @@ Four datasets are created for experimentation on different modality of data as f
 3. Mutimodalality
     - text + image data merged using text dataset and image dataset based on the "submission id" of each post if it has image.
 
-#Folder Structure Conventions
+# Folder Structure Conventions
 
 ```bash
 .
@@ -38,19 +38,21 @@ Four datasets are created for experimentation on different modality of data as f
 |    |____train_featuremap.pkl
 |
 |___ Text Classification(Comments+title)
-|    |____Baseline_models(title+comments).ipynb
-|    |____CNN_model(title+comments).ipynb
-|    |____Cleaning_data(title+comments).ipynb
-|    |____Data_analysis(title+comments).ipynb
-|    |____RNN_models(title+comments).ipynb
+|    |____Baseline_models(title+comments).ipynb        # Machine Learning Algorithms such as MLP Classifier, SGD, linear SVC etc.
+|    |____CNN_model(title+comments).ipynb              # Convolutional neural networks with different word embeddings
+|    |____Cleaning_data(title+comments).ipynb          # Text data preprocessing such as cleaning and removing unnecessary features and noise.
+|    |____Data_analysis(title+comments).ipynb          # text analytics to find patterns across hundreds of texts and produces graphs.
+|    |____RNN_models(title+comments).ipynb             # Recurrent neural networks namely LSTM and Bidirectional LSTM.
 |
-|___ classification(images).ipynb
+|___ classification(images).ipynb            # Image classificztion using basic ML models and applying oversampling, also used neural networks such as CNN, VGG16 and VGG19 for Transfer learning with fine-tuning.
 |
-|___ text_classification.ipynb
+|___ text_classification.ipynb              # Text classification using all the methods and models from above mentioned "Text classification" file without comments data.
 |
 |___ README.md
 |
 |___ requirements.txt
 ```
+
+# 
 
 
