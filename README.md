@@ -1,7 +1,5 @@
 # Introduction
 
-Multimodal-Classification
-
 One machine learning model may not be able to handle the complexity of the binary classification challenge required for real-world false post detection. One of the potential strategies to achive more accurate outcomes is in the employing of the multiple models to process several modalities (e.g. picture modality and textual modality) of the same datasource. Built hybrid text+image models and conducted extensive tests for numerous classification variations, highlighting the significance of the unique multimodality and fine-grained categorization capabilities.
 
 The project's objective is to demonstrate how well the multimodal classification approach performs using a common real-world dataset. 
@@ -53,6 +51,25 @@ Four datasets are created for experimentation on different modality of data as f
 |___ requirements.txt
 ```
 
-# 
+#  Best Models
+         
+         The experimentation is done on different modality features using various models for comparision such as Machine Leaning models ('Logestic Regression','Stocatic Gradient Descent', 'LinearSVC', 'Random Forest', 'KNearestNeighbours', 'MLPClassifier'), convolutional Neural Networks with different embeddings ('GloVe','Keras'), Recurrent Neural Networks( 'LSTM', 'BI-LSTM') and Transferlearning ('VGG16', 'VGG19').
+         
+         For ML models on textual features techniques such as Oversampling (SMOTE) is used to balance the class districution. And also applied Hyper-tuning using GridserachCV which did not show any improvement in model performance.
+         
+         Evaluation is done using RepeatedKFold cross-validation and then tested on the validation dataset which is unseen to the train data.
+
+
+| Modality                                | Model         | Accuracy  | F1_score  |
+| --------------------------------------- |:-------------:|:---------:| ---------:|
+| Textual features   (Comments+title)     | BI-LSTM       |       0.86|       0.79|
+| Textual features                        | BI-LSTM       |       0.81|       0.82|
+| Visual  features                        | are neat      |       0.74|       0.70|
+
+
+# Multimodal-Classification
+
+
+
 
 
