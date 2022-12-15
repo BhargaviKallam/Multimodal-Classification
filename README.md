@@ -53,11 +53,11 @@ Four datasets are created for experimentation on different modality of data as f
 
 #  Best Models
          
-         The experimentation is done on different modality features using various models for comparision such as Machine Leaning models ('Logestic Regression','Stocatic Gradient Descent', 'LinearSVC', 'Random Forest', 'KNearestNeighbours', 'MLPClassifier'), convolutional Neural Networks with different embeddings ('GloVe','Keras'), Recurrent Neural Networks( 'LSTM', 'BI-LSTM') and Transferlearning ('VGG16', 'VGG19').
+   The experimentation is done on different modality features using various models for comparision such as Machine Leaning models ('Logestic Regression','Stocatic Gradient Descent', 'LinearSVC', 'Random Forest', 'KNearestNeighbours', 'MLPClassifier'), convolutional Neural Networks with different embeddings ('GloVe','Keras'), Recurrent Neural Networks( 'LSTM', 'BI-LSTM') and Transferlearning ('VGG16', 'VGG19').
          
-         For ML models on textual features techniques such as Oversampling (SMOTE) is used to balance the class districution. And also applied Hyper-tuning using GridserachCV which did not show any improvement in model performance.
+   For ML models on textual features techniques such as Oversampling (SMOTE) is used to balance the class districution. And also applied Hyper-tuning using GridserachCV which did not show any improvement in model performance.
          
-         Evaluation is done using RepeatedKFold cross-validation and then tested on the validation dataset which is unseen to the train data.
+   Evaluation is done using RepeatedKFold cross-validation and then tested on the validation dataset which is unseen to the train data.
 
 
 | Modality                                | Model         | Accuracy  | F1_score  |
