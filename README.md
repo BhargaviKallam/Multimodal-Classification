@@ -75,11 +75,11 @@ Four datasets are created for experimentation on different modality of data as f
 
   But it is clearly seen that the multimodal classification is performing far better than image or text classification models.
 
-| Modality                                | Model                                         | Accuracy  | F1_score  |
-| --------------------------------------- |:---------------------------------------------:|:---------:| ---------:|
-| Textual features   (title)              | BI-LSTM + 2 Dense layers                      |       0.74|       0.62|
-| Visual features                         | VGG16 + 2 Dense layers                        |       0.61|       0.47|
-**| Visual + Texual features                | Concate (BI-LSTM + VGG16) + 2 Dense layers    |       0.77|       0.73|**__
+| Modality                                | Model                                             | Accuracy  | F1_score  |
+| --------------------------------------- |:-------------------------------------------------:|:---------:| ---------:|
+| Textual features   (title)              | BI-LSTM + 2 Dense layers                          |       0.74|       0.62|
+| Visual features                         | VGG16 + 2 Dense layers                            |       0.61|       0.47|
+| Visual + Textual features               | Concatenate (BI-LSTM + VGG16) + 2 Dense layers    |       0.77|       0.73|
 
 
 
