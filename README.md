@@ -35,6 +35,10 @@ Four datasets are created for experimentation on different modality of data as f
 |    |____test_featuremap.pkl
 |    |____train_featuremap.pkl
 |
+|___ Multimodal Classification
+|    |____image_downloader.ipynb                              # File to download the images from url's using multimodal dataset.
+|    |____multimodal_classification_(VGG16_+_BI_LSTM).ipynb.   # Binary classification on multimodal features using VGG16 and BI-LSTM models.
+|
 |___ Text Classification(Comments+title)
 |    |____Baseline_models(title+comments).ipynb        # Machine Learning Algorithms such as MLP Classifier, SGD, linear SVC etc.
 |    |____CNN_model(title+comments).ipynb              # Convolutional neural networks with different word embeddings
