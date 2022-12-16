@@ -69,6 +69,9 @@ Four datasets are created for experimentation on different modality of data as f
 
 # Multimodal-Classification
 
+   Although we obtained good results, the misclassification is because of the inconsistent data source. Furthermore, due to a lack of computational resources, more advanced models such as ResNet could not be used for image processing. However, it is clear that image features degrade the performance of the better performing text models.
+   But it is clearly seen that the multimodal classification is performing far better than image or text classification models.
+
 
 
 
