@@ -79,7 +79,7 @@ Four datasets are created for experimentation on different modality of data as f
 | --------------------------------------- |:---------------------------------------------:|:---------:| ---------:|
 | Textual features   (title)              | BI-LSTM + 2 Dense layers                      |       0.74|       0.62|
 | Visual features                         | VGG16 + 2 Dense layers                        |       0.61|       0.47|
-| Visual + Texual features                | Concate (BI-LSTM + VGG16) + 2 Dense layers    |       0.77|       0.73|
+**| Visual + Texual features                | Concate (BI-LSTM + VGG16) + 2 Dense layers    |       0.77|       0.73|**__
 
 
 
