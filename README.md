@@ -69,6 +69,18 @@ Four datasets are created for experimentation on different modality of data as f
 
 # Multimodal-Classification
 
+# Multimodal-Classification
+
+  Although we obtained good results, the rest of misclassification is because of the inconsistent data source. Furthermore, due to a lack of computational resources, more advanced models such as ResNet could not be used for image processing. However, it is clear that image features degrade the performance of the better performing text models.
+
+  But it is clearly seen that the multimodal classification is performing far better than image or text classification models.
+
+| Modality                                | Model                                         | Accuracy  | F1_score  |
+| --------------------------------------- |:---------------------------------------------:|:---------:| ---------:|
+| Textual features   (title)              | BI-LSTM + 2 Dense layers                      |       0.74|       0.62|
+| Visual features                         | VGG16 + 2 Dense layers                        |       0.61|       0.47|
+| Visual + Texual features                | Concate (BI-LSTM + VGG16) + 2 Dense layers    |       0.77|       0.73|
+
 
 
 
