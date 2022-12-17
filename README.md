@@ -39,6 +39,7 @@ Four datasets are created for experimentation on different modality of data as f
 |    |____image_downloader.ipynb                                       # File to download the images from url's using multimodal dataset.
 |    |____multimodal_classification_(VGG16_+_BI_LSTM).ipynb.           # Binary classification on multimodal features using VGG16 and BI-LSTM models.
 |    |____multimodal_classification_(VGG19_Alexnet_+_BI_LSTM).ipynb    # VGG19 with Alexnet and BI-LSTM models applied on multimoal Binary classification.
+|    |____multimodal_classification-(VGG16 + CNN).ipynb                # VGG16 and CNN models with Conv1D, maxpooling layers.
 |
 |___ Text Classification(Comments+title)
 |    |____Baseline_models(title+comments).ipynb        # Machine Learning Algorithms such as MLP Classifier, SGD, linear SVC etc.
@@ -79,12 +80,35 @@ Four datasets are created for experimentation on different modality of data as f
   Although we obtained good results, the rest of misclassification is because of the inconsistent data source. Furthermore, due to a lack of computational resources, more advanced models such as ResNet could not be used for image processing. However, it is clear that image features degrade the performance of the better performing text models.
 
   But it is clearly seen that the multimodal classification is performing far better than image or text classification models.
+  
+  ### VGG16 + BI-LSTM
 
 | Modality                                | Model                                             | Accuracy  | F1_score  |
 | --------------------------------------- |:-------------------------------------------------:|:---------:| ---------:|
 | Textual features   (title)              | BI-LSTM + 2 Dense layers                          |       0.74|       0.62|
 | Visual features                         | VGG16 + 2 Dense layers                            |       0.61|       0.47|
 | Visual + Textual features               | Concatenate (BI-LSTM + VGG16) + 2 Dense layers    |       0.77|       0.73|
+
+
+###  VGG16 + CNN 
+
+| Modality                                | Model                                             | Accuracy  | F1_score  |
+| --------------------------------------- |:-------------------------------------------------:|:---------:| ---------:|
+| Textual features   (title)              | CNN          Conv1D  + 2 Dense layers             |       0.74|       0.67|
+| Visual features                         | VGG16 +      2 Dense layers                       |       0.57|       0.12|
+| Visual + Textual features               | Concatenate (CNN + VGG16) + 2 Dense layers        |       0.75|       0.68|
+
+
+### VGG19-Alexnet + BI-LSTM
+
+
+| Modality                                | Model                                             | Accuracy  | F1_score  |
+| --------------------------------------- |:-------------------------------------------------:|:---------:| ---------:|
+| Textual features   (title)              | BI-LSTM + 2 Dense layers                          |       0.74|       0.62|
+| Visual features                         | VGG19-Alexnet + 2 Dense layers                    |       0.61|       0.47|
+| Visual + Textual features               | Concatenate (BI-LSTM + VGG19) + 2 Dense layers    |       0.77|       0.73|
+
+
 
 
 
