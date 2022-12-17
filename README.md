@@ -70,7 +70,7 @@ Four datasets are created for experimentation on different modality of data as f
 | --------------------------------------- |:-------------:|:---------:| ---------:|
 | Textual features   (Comments+title)     | BI-LSTM       |       0.86|       0.79|
 | Textual features                        | BI-LSTM       |       0.81|       0.82|
-| Visual  features                        | are neat      |       0.74|       0.70|
+| Visual  features                        | VGG19         |       0.74|       0.70|
 
 
 # Multimodal-Classification
