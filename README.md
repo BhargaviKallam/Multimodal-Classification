@@ -36,10 +36,21 @@ Four datasets are created for experimentation on different modality of data as f
 |    |____train_featuremap.pkl
 |
 |___ Multimodal Classification
+|    |____Feature_extraction
+|    |    |____VGG16_features_extraction.ipynb
+|    |    |____text_features.ipynb
+|    | 
+|    |____features_data
+|    |    |____test_features_text.pkl
+|    |    |____test_labels.pkl
+|    |    |____train_features_text.pkl
+|    |    |____train_labels.pkl
+|    | 
 |    |____image_downloader.ipynb                                       # File to download the images from url's using multimodal dataset.
 |    |____multimodal_classification_(VGG16_+_BI_LSTM).ipynb.           # Binary classification on multimodal features using VGG16 and BI-LSTM models.
 |    |____multimodal_classification_(VGG19_Alexnet_+_BI_LSTM).ipynb    # VGG19 with Alexnet and BI-LSTM models applied on multimoal Binary classification.
 |    |____multimodal_classification-(VGG16 + CNN).ipynb                # VGG16 and CNN models with Conv1D, maxpooling layers.
+|    |____multimodal_classification_(VGG19_Alexnet_+_BI_LSTM).ipynb
 |
 |___ Text Classification(Comments+title)
 |    |____Baseline_models(title+comments).ipynb        # Machine Learning Algorithms such as MLP Classifier, SGD, linear SVC etc.
@@ -97,6 +108,16 @@ Four datasets are created for experimentation on different modality of data as f
 | Textual features   (title)              | CNN          Conv1D  + 2 Dense layers             |       0.74|       0.67|
 | Visual features                         | VGG16 +      2 Dense layers                       |       0.57|       0.12|
 | Visual + Textual features               | Concatenate (CNN + VGG16) + 2 Dense layers        |       0.75|       0.68|
+
+
+### VGG16-Alexnet + BI-LSTM
+
+
+| Modality                                | Model                                             | Accuracy  | F1_score  |
+| --------------------------------------- |:-------------------------------------------------:|:---------:| ---------:|
+| Textual features   (title)              | BI-LSTM + 2 Dense layers                          |       0.77|       0.70|
+| Visual features                         | VGG16-Alexnet + 2 Dense layers                    |       0.62|       0.51|
+| Visual + Textual features               | Concatenate (BI-LSTM + VGG16) + 2 Dense layers    |       0.77|       0.70|
 
 
 ### VGG19-Alexnet + BI-LSTM
