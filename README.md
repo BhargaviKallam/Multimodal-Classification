@@ -47,10 +47,10 @@ Four datasets are created for experimentation on different modality of data as f
 |    |    |____train_labels.pkl
 |    | 
 |    |____image_downloader.ipynb                                       # File to download the images from url's using multimodal dataset.
+|    |____VGG16_Alexnet_+_BI_LSTM.ipynb
 |    |____multimodal_classification_(VGG16_+_BI_LSTM).ipynb.           # Binary classification on multimodal features using VGG16 and BI-LSTM models.
 |    |____multimodal_classification_(VGG19_Alexnet_+_BI_LSTM).ipynb    # VGG19 with Alexnet and BI-LSTM models applied on multimoal Binary classification.
 |    |____multimodal_classification-(VGG16 + CNN).ipynb                # VGG16 and CNN models with Conv1D, maxpooling layers.
-|    |____multimodal_classification_(VGG19_Alexnet_+_BI_LSTM).ipynb
 |
 |___ Text Classification(Comments+title)
 |    |____Baseline_models(title+comments).ipynb        # Machine Learning Algorithms such as MLP Classifier, SGD, linear SVC etc.
