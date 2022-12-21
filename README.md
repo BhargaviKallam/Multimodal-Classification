@@ -84,7 +84,6 @@ Four datasets are created for experimentation on different modality of data as f
 | Visual  features                        | VGG19         |       0.74|       0.70|
 
 
-# Multimodal-Classification
 
 # Multimodal-Classification
 
